@@ -1,0 +1,515 @@
+﻿<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corteza — Estudio de peluquería en Madrid</title>
+  <meta name="description" content="Corteza, estudio de peluquería en Malasaña. Corte, color y cuidado del cabello. Reserva tu cita online y consulta el horario en tiempo real." />
+  <meta name="theme-color" content="#100904" />
+  <meta property="og:title" content="Corteza — Estudio de peluquería" />
+  <meta property="og:description" content="Corte, color y cuidado. Reserva tu cita online." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23100904'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23ffedd7'%3EC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20261018b" />
+  <script defer src="lib/manifest.js?v=20261018b"></script>
+  <script defer src="main.js?v=20261018b"></script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <a href="#inicio" class="nav__logo">Corteza</a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#estudio" data-navlink>Estudio</a>
+      <a href="#servicios" data-navlink>Servicios</a>
+      <a href="#equipo" data-navlink>Equipo</a>
+      <a href="#horario" data-navlink>Horario</a>
+      <a href="#contacto" data-navlink>Contacto</a>
+    </nav>
+    <div class="nav__right">
+      <span class="nav__status" data-status-mini><i class="dot"></i><span>Horario</span></span>
+      <a href="#cita" class="btn btn--ghost btn--sm">Pedir cita</a>
+      <button class="nav__burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-burger><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" data-menu hidden>
+    <nav aria-label="Menú móvil">
+      <a href="#estudio">Estudio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#galeria">Trabajos</a>
+      <a href="#horario">Horario</a>
+      <a href="#cita">Pedir cita</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+
+  <aside class="side-label" aria-hidden="true">Corteza — Estudio Nº 01 — Malasaña, Madrid</aside>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" data-parallax>
+        <img src="assets/img/hero.jpg" alt="Tijeras, peine y herramientas de peluquería sobre la mesa de trabajo" fetchpriority="high" />
+      </div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__lockup">
+        <p class="hero__tag reveal">Corte, color y cuidado — desde 2014</p>
+        <h1 class="hero__word" aria-label="Corteza">
+          <span class="hero__line">Cor</span><span class="hero__line">teza</span>
+        </h1>
+      </div>
+
+      <div class="hero__card reveal">
+        <p class="hero__card-title">Un estudio pequeño en Malasaña. Pocas sillas, mucho tiempo para cada cabeza.</p>
+        <hr class="dash" />
+        <div class="hero__live" data-status-card>
+          <span class="dot"></span>
+          <div>
+            <strong data-status-label>Consultando horario…</strong>
+            <span data-status-sub>Calle del Pez 21</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#cita" class="hero__book reveal">
+        <span class="hero__book-k">Reserva online</span>
+        <span class="hero__book-t">Pedir cita</span>
+        <span class="hero__book-n" data-next-slot>Elige día y hora en 1 minuto</span>
+        <span class="hero__book-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="#estudio" class="hero__scroll" aria-label="Bajar">Desliza</a>
+    </section>
+
+    <!-- ============ REVEAL / ESTUDIO ============ -->
+    <section class="void" id="estudio" data-scissors-section>
+      <div class="void__grid">
+        <div class="void__left">
+          <p class="label reveal">01 — El estudio</p>
+          <h2 class="h-heading reveal">No es solo<br />un corte.</h2>
+          <hr class="dash reveal" />
+          <ul class="facts reveal">
+            <li><span>12</span> años en el barrio</li>
+            <li><span>4</span> sillas, sin prisas</li>
+            <li><span>4,9</span> valoración media</li>
+          </ul>
+        </div>
+        <div class="void__object" aria-hidden="true">
+          <svg class="scissors" viewBox="0 0 400 400" data-scissors>
+            <defs>
+              <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#6c5f51" />
+                <stop offset=".45" stop-color="#ffedd7" />
+                <stop offset=".6" stop-color="#cdb79e" />
+                <stop offset="1" stop-color="#40372e" />
+              </linearGradient>
+              <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffedd7" />
+                <stop offset=".5" stop-color="#8a7764" />
+                <stop offset="1" stop-color="#382416" />
+              </linearGradient>
+              <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#382416" stop-opacity=".9" />
+                <stop offset="1" stop-color="#100904" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="200" cy="200" r="190" fill="url(#glow)" />
+            <g transform="rotate(32 200 200)">
+              <g class="scissors__half" data-half="a">
+                <path d="M193 206 L190 52 Q196 14 204 40 L210 196 Z" fill="url(#blade)" />
+                <path d="M192 204 Q186 245 176 272" stroke="url(#ring)" stroke-width="13" stroke-linecap="round" fill="none" />
+                <ellipse cx="166" cy="312" rx="28" ry="38" stroke="url(#ring)" stroke-width="12" fill="none" />
+              </g>
+              <g transform="translate(400 0) scale(-1 1)">
+                <g class="scissors__half" data-half="b">
+                  <path d="M193 206 L190 52 Q196 14 204 40 L210 196 Z" fill="url(#blade)" opacity=".92" />
+                  <path d="M192 204 Q186 245 176 272" stroke="url(#ring)" stroke-width="13" stroke-linecap="round" fill="none" />
+                  <ellipse cx="166" cy="312" rx="28" ry="38" stroke="url(#ring)" stroke-width="12" fill="none" />
+                </g>
+              </g>
+              <circle cx="200" cy="200" r="9" fill="#382416" stroke="#ffedd7" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+        <div class="void__right">
+          <p class="body reveal">Escuchamos antes de cortar. Estudiamos tu tipo de pelo, tu rutina y cuánto tiempo quieres dedicarle por la mañana. Luego cortamos para que el peinado funcione la tercera semana, no solo al salir.</p>
+          <a href="#servicios" class="link reveal">Ver servicios y precios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="section__head">
+        <p class="label reveal">02 — Servicios</p>
+        <h2 class="h-display reveal">Carta de<br />servicios.</h2>
+        <p class="body body--sm reveal">Precios finales con IVA. El precio de color puede variar según largo y cantidad de pelo; te lo confirmamos en el diagnóstico.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" data-tabs>
+        <button class="pill is-active" role="tab" aria-selected="true" data-tab="all">Todo</button>
+        <button class="pill" role="tab" aria-selected="false" data-tab="corte">Corte</button>
+        <button class="pill" role="tab" aria-selected="false" data-tab="color">Color</button>
+        <button class="pill" role="tab" aria-selected="false" data-tab="cuidado">Cuidado</button>
+        <button class="pill" role="tab" aria-selected="false" data-tab="barberia">Barbería</button>
+        <button class="pill" role="tab" aria-selected="false" data-tab="eventos">Eventos</button>
+      </div>
+
+      <ul class="services" data-services>
+        <li class="svc" data-cat="corte" data-service="corte-mujer" data-name="Corte y peinado" data-duration="60" data-price="38">
+          <span class="svc__name">Corte y peinado</span>
+          <span class="svc__desc">Diagnóstico, lavado con masaje, corte y secado.</span>
+          <span class="svc__time">60 min</span><span class="svc__price">38 €</span>
+          <button class="svc__book" type="button" data-book="corte-mujer">Reservar</button>
+        </li>
+        <li class="svc" data-cat="corte" data-service="corte-hombre" data-name="Corte caballero" data-duration="30" data-price="22">
+          <span class="svc__name">Corte caballero</span>
+          <span class="svc__desc">Tijera o máquina, lavado y acabado con producto.</span>
+          <span class="svc__time">30 min</span><span class="svc__price">22 €</span>
+          <button class="svc__book" type="button" data-book="corte-hombre">Reservar</button>
+        </li>
+        <li class="svc" data-cat="corte" data-service="corte-infantil" data-name="Corte infantil" data-duration="30" data-price="16">
+          <span class="svc__name">Corte infantil</span>
+          <span class="svc__desc">Hasta 12 años. Con paciencia y sin prisa.</span>
+          <span class="svc__time">30 min</span><span class="svc__price">16 €</span>
+          <button class="svc__book" type="button" data-book="corte-infantil">Reservar</button>
+        </li>
+        <li class="svc" data-cat="corte" data-service="peinado" data-name="Lavado y peinado" data-duration="30" data-price="20">
+          <span class="svc__name">Lavado y peinado</span>
+          <span class="svc__desc">Secado liso, ondas o recogido sencillo.</span>
+          <span class="svc__time">30 min</span><span class="svc__price">20 €</span>
+          <button class="svc__book" type="button" data-book="peinado">Reservar</button>
+        </li>
+        <li class="svc" data-cat="color" data-service="color-raiz" data-name="Color de raíz" data-duration="90" data-price="45">
+          <span class="svc__name">Color de raíz</span>
+          <span class="svc__desc">Retoque de raíz con tinte sin amoniaco y peinado.</span>
+          <span class="svc__time">90 min</span><span class="svc__price">45 €</span>
+          <button class="svc__book" type="button" data-book="color-raiz">Reservar</button>
+        </li>
+        <li class="svc" data-cat="color" data-service="mechas" data-name="Mechas balayage" data-duration="180" data-price="95">
+          <span class="svc__name">Mechas balayage</span>
+          <span class="svc__desc">Aclarado a mano alzada, matiz y tratamiento protector.</span>
+          <span class="svc__time">180 min</span><span class="svc__price">desde 95 €</span>
+          <button class="svc__book" type="button" data-book="mechas">Reservar</button>
+        </li>
+        <li class="svc" data-cat="color" data-service="matiz" data-name="Baño de color" data-duration="60" data-price="35">
+          <span class="svc__name">Baño de color</span>
+          <span class="svc__desc">Brillo y matiz sin compromiso. Dura de 4 a 6 semanas.</span>
+          <span class="svc__time">60 min</span><span class="svc__price">35 €</span>
+          <button class="svc__book" type="button" data-book="matiz">Reservar</button>
+        </li>
+        <li class="svc" data-cat="cuidado" data-service="keratina" data-name="Alisado de keratina" data-duration="150" data-price="120">
+          <span class="svc__name">Alisado de keratina</span>
+          <span class="svc__desc">Sin formol. Reduce el encrespado hasta 4 meses.</span>
+          <span class="svc__time">150 min</span><span class="svc__price">desde 120 €</span>
+          <button class="svc__book" type="button" data-book="keratina">Reservar</button>
+        </li>
+        <li class="svc" data-cat="cuidado" data-service="ritual" data-name="Ritual de hidratación" data-duration="45" data-price="30">
+          <span class="svc__name">Ritual de hidratación</span>
+          <span class="svc__desc">Mascarilla con vapor, masaje craneal y secado.</span>
+          <span class="svc__time">45 min</span><span class="svc__price">30 €</span>
+          <button class="svc__book" type="button" data-book="ritual">Reservar</button>
+        </li>
+        <li class="svc" data-cat="barberia" data-service="barba" data-name="Arreglo de barba" data-duration="30" data-price="15">
+          <span class="svc__name">Arreglo de barba</span>
+          <span class="svc__desc">Perfilado a navaja, toalla caliente y aceite.</span>
+          <span class="svc__time">30 min</span><span class="svc__price">15 €</span>
+          <button class="svc__book" type="button" data-book="barba">Reservar</button>
+        </li>
+        <li class="svc" data-cat="barberia" data-service="corte-barba" data-name="Corte + barba" data-duration="60" data-price="32">
+          <span class="svc__name">Corte + barba</span>
+          <span class="svc__desc">El servicio completo de barbería.</span>
+          <span class="svc__time">60 min</span><span class="svc__price">32 €</span>
+          <button class="svc__book" type="button" data-book="corte-barba">Reservar</button>
+        </li>
+        <li class="svc" data-cat="eventos" data-service="recogido" data-name="Recogido de evento" data-duration="60" data-price="45">
+          <span class="svc__name">Recogido de evento</span>
+          <span class="svc__desc">Bodas, graduaciones e invitadas. Prueba previa opcional.</span>
+          <span class="svc__time">60 min</span><span class="svc__price">45 €</span>
+          <button class="svc__book" type="button" data-book="recogido">Reservar</button>
+        </li>
+        <li class="svc" data-cat="eventos" data-service="novia" data-name="Novia — prueba y día" data-duration="120" data-price="180">
+          <span class="svc__name">Novia — prueba y día</span>
+          <span class="svc__desc">Prueba en el estudio y peinado el día de la boda.</span>
+          <span class="svc__time">120 min</span><span class="svc__price">desde 180 €</span>
+          <button class="svc__book" type="button" data-book="novia">Reservar</button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section class="section" id="equipo">
+      <div class="section__head">
+        <p class="label reveal">03 — Equipo</p>
+        <h2 class="h-display reveal">Cuatro manos,<br />ocho tijeras.</h2>
+      </div>
+      <div class="team">
+        <article class="member reveal" data-stylist="lucia" data-name="Lucía">
+          <div class="member__mono">L</div>
+          <h3 class="member__name">Lucía Ortega</h3>
+          <p class="member__role">Fundadora — Color y balayage</p>
+          <hr class="dash" />
+          <p class="member__bio">Formada en Londres. Si quieres rubio sin que se note el esfuerzo, es ella.</p>
+        </article>
+        <article class="member reveal" data-stylist="marco" data-name="Marco">
+          <div class="member__mono">M</div>
+          <h3 class="member__name">Marco Rey</h3>
+          <p class="member__role">Corte y barbería</p>
+          <hr class="dash" />
+          <p class="member__bio">Fade, tijera clásica y navaja. Doce minutos de conversación incluidos.</p>
+        </article>
+        <article class="member reveal" data-stylist="ines" data-name="Inés">
+          <div class="member__mono">I</div>
+          <h3 class="member__name">Inés Valdés</h3>
+          <p class="member__role">Corte de autor — Pelo rizado</p>
+          <hr class="dash" />
+          <p class="member__bio">Corta en seco, rizo a rizo. Especialista en método curly.</p>
+        </article>
+        <article class="member reveal" data-stylist="sara" data-name="Sara">
+          <div class="member__mono">S</div>
+          <h3 class="member__name">Sara Gil</h3>
+          <p class="member__role">Recogidos y novias</p>
+          <hr class="dash" />
+          <p class="member__bio">Más de 300 bodas. Trae una foto y la mejoramos juntas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="section section--flush" id="galeria">
+      <div class="section__head">
+        <p class="label reveal">04 — Trabajos</p>
+        <h2 class="h-display reveal">Hecho en<br />esta silla.</h2>
+      </div>
+      <div class="gallery">
+        <figure class="g g--tall reveal"><img src="assets/img/gal-1.jpg" alt="Trabajo de peluquería" loading="lazy" /><figcaption>Corte y forma</figcaption></figure>
+        <figure class="g reveal"><img src="assets/img/gal-2.jpg" alt="Trabajo de peluquería" loading="lazy" /><figcaption>Barbería</figcaption></figure>
+        <figure class="g reveal"><img src="assets/img/gal-3.jpg" alt="Trabajo de peluquería" loading="lazy" /><figcaption>Color</figcaption></figure>
+        <figure class="g g--wide reveal"><img src="assets/img/gal-4.jpg" alt="Interior del estudio" loading="lazy" /><figcaption>El estudio</figcaption></figure>
+        <figure class="g reveal"><img src="assets/img/gal-5.jpg" alt="Trabajo de peluquería" loading="lazy" /><figcaption>Detalle</figcaption></figure>
+        <figure class="g reveal"><img src="assets/img/gal-6.jpg" alt="Herramientas de peluquería" loading="lazy" /><figcaption>Herramientas</figcaption></figure>
+      </div>
+      <div class="gallery__foot">
+        <a href="#" class="link">Más trabajos en Instagram — @corteza.estudio</a>
+      </div>
+    </section>
+
+    <!-- ============ HORARIO EN TIEMPO REAL ============ -->
+    <section class="section" id="horario">
+      <div class="live">
+        <div class="live__now">
+          <p class="label reveal">05 — Horario en tiempo real</p>
+          <p class="live__state" data-live-state>Abierto</p>
+          <p class="live__clock"><span data-live-clock>--:--</span> <span class="live__tz">Hora en Madrid</span></p>
+          <p class="body body--sm" data-live-sub>Cargando horario…</p>
+          <div class="dayline" aria-hidden="true">
+            <div class="dayline__track" data-dayline></div>
+            <div class="dayline__now" data-dayline-now></div>
+            <div class="dayline__ticks"><span>08</span><span>12</span><span>16</span><span>20</span><span>22</span></div>
+          </div>
+        </div>
+        <div class="live__week">
+          <table class="week">
+            <caption class="label">Semana</caption>
+            <tbody data-week>
+              <tr data-day="1"><th>Lunes</th><td>Cerrado</td></tr>
+              <tr data-day="2"><th>Martes</th><td>10:00–14:00 · 16:00–20:30</td></tr>
+              <tr data-day="3"><th>Miércoles</th><td>10:00–14:00 · 16:00–20:30</td></tr>
+              <tr data-day="4"><th>Jueves</th><td>10:00–20:30</td></tr>
+              <tr data-day="5"><th>Viernes</th><td>10:00–20:30</td></tr>
+              <tr data-day="6"><th>Sábado</th><td>09:30–15:00</td></tr>
+              <tr data-day="0"><th>Domingo</th><td>Cerrado</td></tr>
+            </tbody>
+          </table>
+          <p class="micro">* Festivos nacionales cerrado. Agosto: consultar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CITA ============ -->
+    <section class="section" id="cita">
+      <div class="section__head">
+        <p class="label reveal">06 — Pedir cita</p>
+        <h2 class="h-display reveal">Tu hueco,<br />en cuatro pasos.</h2>
+        <p class="body body--sm reveal">Sin llamadas ni esperas. Eliges, confirmas y te llega el recordatorio.</p>
+      </div>
+
+      <div class="booking" data-booking>
+        <ol class="steps" data-steps>
+          <li class="is-active" data-step-ind="1"><span>01</span> Servicio</li>
+          <li data-step-ind="2"><span>02</span> Profesional</li>
+          <li data-step-ind="3"><span>03</span> Día y hora</li>
+          <li data-step-ind="4"><span>04</span> Tus datos</li>
+        </ol>
+
+        <div class="booking__body">
+          <!-- Paso 1 -->
+          <div class="step is-active" data-step="1">
+            <p class="step__q">¿Qué te hacemos?</p>
+            <div class="choices" data-choices-services>
+              <noscript><p class="body body--sm">Activa JavaScript para reservar online o llámanos al +34 910 000 000.</p></noscript>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="step" data-step="2">
+            <p class="step__q">¿Con quién?</p>
+            <div class="choices choices--team" data-choices-team></div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="step" data-step="3">
+            <p class="step__q">¿Cuándo te viene bien?</p>
+            <div class="days" data-days></div>
+            <div class="slots-wrap">
+              <p class="slots__legend"><span class="lg lg--free"></span> Libre <span class="lg lg--busy"></span> Ocupado</p>
+              <div class="slots" data-slots></div>
+            </div>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="step" data-step="4">
+            <p class="step__q">Últimos datos.</p>
+            <!-- Netlify Forms: Netlify detecta este formulario al publicar y guarda cada cita en Forms → "cita" -->
+            <form class="form" name="cita" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-form novalidate>
+              <input type="hidden" name="form-name" value="cita" />
+              <input type="hidden" name="servicio" />
+              <input type="hidden" name="profesional" />
+              <input type="hidden" name="fecha" />
+              <input type="hidden" name="hora" />
+              <input type="hidden" name="duracion" />
+              <input type="hidden" name="precio" />
+              <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
+              <label class="field"><span>Nombre</span><input name="name" type="text" autocomplete="name" required /></label>
+              <label class="field"><span>Teléfono</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9 +]{9,15}" required /></label>
+              <label class="field"><span>Email (opcional)</span><input name="email" type="email" autocomplete="email" /></label>
+              <label class="field field--full"><span>Algo que debamos saber</span><input name="notes" type="text" placeholder="Alergias, referencia, largo actual…" /></label>
+              <label class="check field--full"><input type="checkbox" name="privacy" value="Aceptada" required /> <span>Acepto la política de privacidad y que me contactéis para recordar la cita.</span></label>
+            </form>
+          </div>
+
+          <!-- Confirmación -->
+          <div class="step" data-step="5">
+            <p class="label">Cita reservada</p>
+            <p class="confirm__title">Te esperamos.</p>
+            <dl class="summary" data-confirm></dl>
+            <p class="send-status" data-send-status></p>
+            <div class="confirm__actions">
+              <a class="btn btn--filled" data-wa target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+              <button class="btn btn--ghost" type="button" data-ics>Añadir al calendario</button>
+              <button class="btn btn--ghost" type="button" data-restart>Otra cita</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="booking__side">
+          <p class="label">Resumen</p>
+          <dl class="summary" data-summary>
+            <div><dt>Servicio</dt><dd data-sum="service">—</dd></div>
+            <div><dt>Profesional</dt><dd data-sum="stylist">—</dd></div>
+            <div><dt>Día</dt><dd data-sum="date">—</dd></div>
+            <div><dt>Hora</dt><dd data-sum="time">—</dd></div>
+            <div><dt>Duración</dt><dd data-sum="duration">—</dd></div>
+            <div><dt>Precio</dt><dd data-sum="price">—</dd></div>
+          </dl>
+          <hr class="dash" />
+          <div class="booking__nav">
+            <button class="btn btn--ghost" type="button" data-prev disabled>Atrás</button>
+            <button class="btn btn--filled" type="button" data-next disabled>Continuar</button>
+          </div>
+          <p class="micro">* Puedes cancelar gratis hasta 24 h antes.</p>
+        </aside>
+      </div>
+
+      <div class="mine" data-mine hidden>
+        <p class="label">Tus próximas citas</p>
+        <ul data-mine-list></ul>
+      </div>
+    </section>
+
+    <!-- ============ OPINIONES ============ -->
+    <section class="section" id="opiniones">
+      <div class="section__head">
+        <p class="label reveal">07 — Opiniones</p>
+        <h2 class="h-display reveal">4,9 sobre 5.</h2>
+        <p class="body body--sm reveal">Más de 380 reseñas en Google.</p>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <p>“Llevaba años buscando a alguien que entendiera mi rizo. Inés lo entendió en diez minutos.”</p>
+          <footer>— Carmen R. · Corte curly</footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“El balayage más natural que me han hecho. Y crece sin que se note la raíz.”</p>
+          <footer>— Paula M. · Mechas</footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“Reservé desde el móvil a las once de la noche. A las diez de la mañana estaba sentado.”</p>
+          <footer>— Javier T. · Corte + barba</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="faq">
+        <div>
+          <p class="label reveal">08 — Preguntas</p>
+          <h2 class="h-heading reveal">Antes de<br />venir.</h2>
+        </div>
+        <div class="faq__list">
+          <details class="reveal"><summary>¿Puedo cambiar o cancelar mi cita?</summary><p>Sí, gratis hasta 24 horas antes. Escríbenos por WhatsApp o llámanos.</p></details>
+          <details class="reveal"><summary>¿Cómo se paga?</summary><p>Efectivo, tarjeta y Bizum. No pedimos señal salvo en servicios de novia.</p></details>
+          <details class="reveal"><summary>¿Hacéis prueba de color?</summary><p>Sí. Para cambios grandes hacemos una prueba de mechón y un diagnóstico sin coste.</p></details>
+          <details class="reveal"><summary>¿Hay aparcamiento cerca?</summary><p>Parking público en Plaza de las Comendadoras, a tres minutos. Metro Noviciado.</p></details>
+          <details class="reveal"><summary>¿Vendéis tarjetas regalo?</summary><p>Sí, de cualquier importe o servicio. Pídela en el estudio o por WhatsApp.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section" id="contacto">
+      <div class="contact">
+        <div class="contact__info">
+          <p class="label reveal">09 — Contacto</p>
+          <h2 class="h-display reveal">Ven a<br />vernos.</h2>
+          <dl class="contact__list reveal">
+            <div><dt>Dirección</dt><dd data-addr>Calle del Pez 21, 28004 Madrid</dd></div>
+            <div><dt>Teléfono</dt><dd><a href="tel:+34910000000" class="link" data-phone>+34 910 000 000</a></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/34600000000" class="link" target="_blank" rel="noopener" data-wa-link>Escríbenos</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hola@corteza.es" class="link" data-mail>hola@corteza.es</a></dd></div>
+            <div><dt>Metro</dt><dd>Noviciado (L2) · Tribunal (L1, L10)</dd></div>
+          </dl>
+          <a href="https://www.google.com/maps/search/?api=1&query=Calle+del+Pez+21+Madrid" class="btn btn--ghost reveal" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+        <div class="contact__map reveal">
+          <iframe title="Mapa de ubicación" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7095%2C40.4225%2C-3.6995%2C40.4285&amp;layer=mapnik&amp;marker=40.42555%2C-3.70500"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__word">Corteza</p>
+    <div class="footer__row">
+      <span>© 2026 Corteza Estudio</span>
+      <a href="#">Aviso legal</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Cookies</a>
+      <span class="footer__credit">Web diseñada por <a href="#" class="ember">Tu estudio</a></span>
+    </div>
+    <p class="legal">* Web modelo. Nombres, precios, opiniones y datos de contacto son de ejemplo. Fotografías de dominio público (CC0) — créditos en assets/credits.json.</p>
+  </footer>
+
+  <a href="#cita" class="fab" data-fab>Pedir cita</a>
+
+</body>
+</html>
